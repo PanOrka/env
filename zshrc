@@ -87,6 +87,9 @@ VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 
 source $ZSH/oh-my-zsh.sh
 
+# Neovim export path
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
