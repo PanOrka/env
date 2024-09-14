@@ -79,8 +79,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  vi-mode
   fzf
 )
+
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,3 +120,4 @@ source ~/.aliases.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
