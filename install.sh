@@ -13,4 +13,5 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM}"
 cp "${CURRENT_DIR}"/zshrc ~/.zshrc
 cp "${CURRENT_DIR}"/p10k.zsh ~/.p10k.zsh
 cp "${CURRENT_DIR}"/aliases.zsh ~/.aliases.zsh
+cp -r "${CURRENT_DIR}"/nvim ~/.config/
 
