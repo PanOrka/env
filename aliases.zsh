@@ -1,0 +1,2 @@
+alias zshconfig="vim ~/.zshrc"
+
