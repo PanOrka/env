@@ -16,6 +16,7 @@ sudo apt install git curl zsh fonts-powerline
 # Install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --unattended"
 
+# Download powerlevel10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 
 cp "${CURRENT_DIR}"/zshrc ~/.zshrc
@@ -23,5 +24,6 @@ cp "${CURRENT_DIR}"/p10k.zsh ~/.p10k.zsh
 cp "${CURRENT_DIR}"/aliases.zsh ~/.aliases.zsh
 cp -r "${CURRENT_DIR}"/nvim ~/.config/
 
+# Download Packer plugin manager for neovim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
