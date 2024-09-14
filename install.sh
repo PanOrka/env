@@ -23,3 +23,5 @@ cp "${CURRENT_DIR}"/p10k.zsh ~/.p10k.zsh
 cp "${CURRENT_DIR}"/aliases.zsh ~/.aliases.zsh
 cp -r "${CURRENT_DIR}"/nvim ~/.config/
 
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
