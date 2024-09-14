@@ -1,2 +1,2 @@
-require("panorka")
+require("plugins")
 
