@@ -1,4 +1,9 @@
+
 function ColorTerminal(color)
+    require("rose-pine").setup({
+        styles = { transparency = true }
+    })
+
     color = color or 'rose-pine-moon'
     vim.cmd.colorscheme(color)
 
