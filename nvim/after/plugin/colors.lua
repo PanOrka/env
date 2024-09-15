@@ -1,4 +1,3 @@
-
 function ColorTerminal(color)
     require("rose-pine").setup({
         styles = { transparency = true }
