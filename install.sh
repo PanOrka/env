@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 CURRENT_DIR="$(dirname "$(realpath "$0")")"
 
-sudo apt install git curl zsh fonts-powerline
+sudo apt install git curl zsh fonts-powerline ripgrep
 
 # Install latest neovim
 (
