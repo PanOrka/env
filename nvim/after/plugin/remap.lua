@@ -8,3 +8,5 @@ vim.keymap.set('n', '<C-f>', function()
     telescope_builtin.grep_string({ search = vim.fn.input('Grep > ') })
 end)
 
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+
