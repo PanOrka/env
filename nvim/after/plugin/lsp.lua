@@ -4,9 +4,14 @@ local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
 cmp.setup({
+    sources = {
+        { name = "nvim_lsp" },
+        { name = "buffer" },
+        { name = "path" }
+    },
     mapping = cmp.mapping.preset.insert({
-        ['<C-,>'] = cmp.mapping.select_prev_item(cmp_select),
-        ['<C-.>'] = cmp.mapping.select_next_item(cmp_select),
+        ['<C-b>'] = cmp.mapping.select_prev_item(cmp_select),
+        ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
         ['<C-Space>'] = cmp.mapping.complete()
     }),
