@@ -8,12 +8,14 @@ sudo apt install git curl zsh fonts-powerline ripgrep fzf npm
 # Install latest neovim
 (
     cd "$(mktemp -d)"
-    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
     sudo rm -rf /opt/nvim
-    sudo tar -C /opt -xzf nvim-linux64.tar.gz
+    sudo mkdir -p /opt/nvim
+    sudo tar --strip-components=1 -C /opt/nvim -xzf nvim-linux-x86_64.tar.gz
 )
 
 # Install zsh
+rm -rf ~/.oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --unattended"
 
 # Download powerlevel10k theme
@@ -25,5 +27,6 @@ cp "${CURRENT_DIR}"/aliases.zsh ~/.aliases.zsh
 cp -r "${CURRENT_DIR}"/nvim ~/.config/
 
 # Download Packer plugin manager for neovim
+rm -rf ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
