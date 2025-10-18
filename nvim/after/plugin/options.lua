@@ -1,5 +1,5 @@
 vim.api.nvim_set_option('clipboard', 'unnamedplus')
-vim.o.statuscolumn = "%s %l %r "
+vim.o.statuscolumn = "%s %{v:relnum} %{v:lnum}"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
