@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 CURRENT_DIR="$(dirname "$(realpath "$0")")"
 
-sudo apt install git curl zsh fonts-powerline ripgrep fzf npm xclip
+sudo apt install git curl zsh fonts-powerline ripgrep fzf npm xclip tmux
 
 # Install latest neovim
 (
@@ -24,6 +24,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/cu
 cp "${CURRENT_DIR}"/zshrc ~/.zshrc
 cp "${CURRENT_DIR}"/p10k.zsh ~/.p10k.zsh
 cp "${CURRENT_DIR}"/aliases.zsh ~/.aliases.zsh
+cp "${CURRENT_DIR}"/tmux.conf ~/.tmux.conf
 cp -r "${CURRENT_DIR}"/nvim ~/.config/
 
 # Download Packer plugin manager for neovim
